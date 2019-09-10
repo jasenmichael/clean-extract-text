@@ -23,11 +23,29 @@ let file = '<your-file>.pdf|png|jpg'
 ```
 
 requires imagemagick
-
-note: only tested on linux ubuntu/debian
-
 ```bash
+
+# on debian linux
 sudo apt-get install imagemagick
+
+# on iOS
+brew install imagemagick
 ```
+
+
+READING PDF files
+
+to convert .pdf files with imagemagick, you must edit the policy.xml file, it is probably located at - /etc/ImageMagick-6/policy.xml
+
+replace
+```xml
+  <policy domain="coder" rights="none" pattern="PDF" />
+```
+
+with
+```xml
+  <policy domain="coder" rights="read|write" pattern="PDF" />
+```
+
 
 
