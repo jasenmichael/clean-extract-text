@@ -4,6 +4,8 @@
 
 #### clean image(or pdf) text, then use tesseract ocr to extract text from cleaned image.
 
+![Alt Text](clean-extract-text.gif)
+
 ```bash
 git clone https://github.com/jasenmichael/clean-extract-text.git
 cd clean-extract-text
