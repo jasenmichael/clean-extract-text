@@ -1,5 +1,5 @@
 let file = 'src/receipt.pdf'
-// const file = './receipt.jpg'
+// const file = 'src/receipt.jpg'
 
 
 let Tesseract = require('tesseract.js')
